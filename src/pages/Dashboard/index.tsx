@@ -17,6 +17,7 @@ import {
   Card,
   TableContainer,
   Title,
+  Menu,
 } from './styles';
 
 interface Transaction {
@@ -57,6 +58,10 @@ const Dashboard: React.FC = () => {
   return (
     <>
       <Header />
+      <Menu>
+        <p>Listagem</p>
+        <Link to="/import">Importar</Link>
+      </Menu>
       <Container>
         <CardContainer>
           <Card>

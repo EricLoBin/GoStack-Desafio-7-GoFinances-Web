@@ -93,3 +93,43 @@ export const TableContainer = styled.section`
     }
   }
 `;
+
+export const Menu = styled.div`
+  position: absolute;
+  margin-left: auto;
+  padding-right: 160px;
+  width: 100%;
+  text-align: right;
+  top: 35px;
+
+  p + a,
+  a + p {
+    margin-left: 32px;
+  }
+
+  a {
+    color: #ffffff;
+    opacity: 0.8;
+    text-decoration: none;
+    text-align: right;
+  }
+
+  p {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: right;
+    display: contents;
+
+    &::after {
+      content: ' ';
+      position: absolute;
+      width: 73px;
+      height: 2px;
+      transform: translate(-100%, calc(1rem + 10px));
+
+      /* Orange */
+
+      background: #ff872c;
+    }
+  }
+`;
